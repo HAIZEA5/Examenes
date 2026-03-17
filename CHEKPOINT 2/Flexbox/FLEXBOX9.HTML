@@ -14,29 +14,36 @@
      
     }
 
-    .flexSix {
+    .flexSeven {
       display: flex;
-      height: 250px;
-      width: 400px;
       background-color: #f1f1f1;
-      flex-direction: column;
+      height: 400px;
+      width: 500px;
+      justify-content: space-between;
     }
 
     .one {
       display: flex;
-      justify-content: space-around;
+      flex-direction: column;
+      justify-content: center;
     }
 
     .two {
       display: flex;
-      justify-content: space-between;
-      margin: 50px 0;
-      background-color: #d6d6d6;
+      flex-direction: column;
+      justify-content: flex-end;
     }
 
     .three {
       display: flex;
-      justify-content: space-evenly;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .four {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .item {
@@ -51,7 +58,7 @@
 <body>
   <div class="container">
 
-    <div class="flexSix">
+    <div class="flexSeven">
       <div class="one">
         <div class="item"></div>
         <div class="item"></div>
@@ -63,6 +70,11 @@
         <div class="item"></div>
       </div>
       <div class="three">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <div class="four">
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>

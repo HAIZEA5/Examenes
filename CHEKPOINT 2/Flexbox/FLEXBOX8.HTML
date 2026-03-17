@@ -14,35 +14,34 @@
      
     }
 
-    .flexSix {
+    .flexEight {
       display: flex;
-      height: 250px;
-      width: 400px;
-      background-color: #f1f1f1;
-      flex-direction: column;
+      height: 400px;
+      background-color: #eeeeee;
+      width: 300px;
     }
 
-    .one {
+    .flexEight .one, 
+    .flexEight .two, 
+    .flexEight .three {
       display: flex;
-      justify-content: space-around;
+    width: 100px;
+    }
+    .flexEight .one {
+      align-items: center;
+    }
+    .flexEight .two {
+      align-items: flex-end;
     }
 
-    .two {
-      display: flex;
-      justify-content: space-between;
-      margin: 50px 0;
-      background-color: #d6d6d6;
-    }
-
-    .three {
-      display: flex;
-      justify-content: space-evenly;
+    .flexEight .three {
+      align-items: flex-start;
     }
 
     .item {
       background-color: #0b6643;
-      width: 50px;
-      height: 50px;
+      width: 100px;
+      height: 100px;
     }
 
   </style>
@@ -51,7 +50,7 @@
 <body>
   <div class="container">
 
-    <div class="flexSix">
+    <div class="flexEight">
       <div class="one">
         <div class="item"></div>
         <div class="item"></div>
