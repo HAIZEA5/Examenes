@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Flexbox Exercises</title>
+  <title>Flexbox Exercises Corrected</title>
   <style>
     body {
       margin: 0;
@@ -11,29 +11,16 @@
       background-color: #f9f9f9;
     }
 
-    section {
-      margin-bottom: 50px;
-      padding: 20px;
-      background-color: #fff;
-      border: 1px solid #ddd;
-    }
-
-    h2 {
-      margin-top: 0;
-    }
-
     .container {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 20px;
+      margin-bottom: 50px;
     }
 
     /* General square style */
     .square {
       background-color: cadetblue;
-      width: 200px;
-      height: 200px;
     }
 
     .item {
@@ -47,6 +34,8 @@
       display: flex;
     }
     .flexOne .square {
+      width: 100px;
+      height: 100px;
       margin: 5px;
     }
 
@@ -56,6 +45,8 @@
       flex-direction: column;
     }
     .flexTwo .square {
+      width: 100px;
+      height: 100px;
       margin: 2px;
     }
 
@@ -65,6 +56,8 @@
       flex-direction: row-reverse;
     }
     .flexThree .square {
+      width: 100px;
+      height: 100px;
       margin: 5px;
     }
 
@@ -100,8 +93,8 @@
     .flexSix {
       display: flex;
       flex-direction: column;
+      width: 300px;
       height: 250px;
-      width: 400px;
       background-color: #f1f1f1;
     }
     .flexSix .one {
@@ -122,8 +115,8 @@
     /* FlexSeven */
     .flexSeven {
       display: flex;
-      width: 500px;
-      height: 400px;
+      width: 300px;
+      height: 250px;
       background-color: #f1f1f1;
       justify-content: space-between;
     }
@@ -135,25 +128,27 @@
       justify-content: center;
     }
     .flexSeven .two {
+      background-color: #d6d6d6;
       justify-content: flex-end;
     }
     .flexSeven .three {
       justify-content: flex-start;
     }
     .flexSeven .four {
+      background-color: #d6d6d6;
       justify-content: space-between;
     }
 
     /* FlexEight */
     .flexEight {
       display: flex;
-      width: 300px;
-      height: 400px;
+      width: 250px;
+      height: 250px;
       background-color: #eeeeee;
     }
     .flexEight > div {
       display: flex;
-      width: 100px;
+      width: 50px;
     }
     .flexEight .one {
       align-items: center;
@@ -168,8 +163,8 @@
     /* FlexNine */
     .flexNine {
       display: flex;
-      width: 250px;
-      height: 200px;
+      width: 350px;
+      height: 250px;
       background-color: #eeeeee;
       justify-content: space-evenly;
       align-items: flex-start;
@@ -182,146 +177,128 @@
 </head>
 <body>
 
-  <section>
-    <h2>Flex One</h2>
-    <div class="container">
-      <div class="flexOne">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-      </div>
+  <!-- Flexbox 1 -->
+  <div class="container">
+    <div class="flexOne">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
     </div>
-  </section>
+  </div>
 
-  <section>
-    <h2>Flex Two</h2>
-    <div class="container">
-      <div class="flexTwo">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-      </div>
+  <!-- Flexbox 2 -->
+  <div class="container">
+    <div class="flexTwo">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
     </div>
-  </section>
+  </div>
 
-  <section>
-    <h2>Flex Three</h2>
-    <div class="container">
-      <div class="flexThree">
-        <div class="square">1</div>
-        <div class="square">2</div>
-        <div class="square">3</div>
-      </div>
+  <!-- Flexbox 3 -->
+  <div class="container">
+    <div class="flexThree">
+      <div class="square">1</div>
+      <div class="square">2</div>
+      <div class="square">3</div>
     </div>
-  </section>
+  </div>
 
-  <section>
-    <h2>Flex Four</h2>
-    <div class="container">
-      <div class="flexFour">
-        <div class="square">1</div>
-        <div class="square">2</div>
-        <div class="square">3</div>
-        <div class="square">4</div>
-      </div>
+  <!-- Flexbox 4 -->
+  <div class="container">
+    <div class="flexFour">
+      <div class="square">1</div>
+      <div class="square">2</div>
+      <div class="square">3</div>
+      <div class="square">4</div>
     </div>
-  </section>
+  </div>
 
-  <section>
-    <h2>Flex Five</h2>
-    <div class="container">
-      <div class="flexFive">
-        <div class="item">1</div>
-        <div class="item" id="grow">2</div>
-        <div class="item">3</div>
-      </div>
+  <!-- Flexbox 5 -->
+  <div class="container">
+    <div class="flexFive">
+      <div class="item">1</div>
+      <div class="item" id="grow">2</div>
+      <div class="item">3</div>
     </div>
-  </section>
+  </div>
 
-  <section>
-    <h2>Flex Six</h2>
-    <div class="container">
-      <div class="flexSix">
-        <div class="one">
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-        </div>
-        <div class="two">
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-        </div>
-        <div class="three">
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Flex Seven</h2>
-    <div class="container">
-      <div class="flexSeven">
-        <div class="one">
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-        </div>
-        <div class="two">
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-        </div>
-        <div class="three">
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-        </div>
-        <div class="four">
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Flex Eight</h2>
-    <div class="container">
-      <div class="flexEight">
-        <div class="one">
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-        </div>
-        <div class="two">
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-        </div>
-        <div class="three">
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Flex Nine</h2>
-    <div class="container">
-      <div class="flexNine">
+  <!-- Flexbox 6 -->
+  <div class="container">
+    <div class="flexSix">
+      <div class="one">
         <div class="item"></div>
-        <div class="item" id="special"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <div class="two">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <div class="three">
+        <div class="item"></div>
+        <div class="item"></div>
         <div class="item"></div>
       </div>
     </div>
-  </section>
+  </div>
+
+  <!-- Flexbox 7 -->
+  <div class="container">
+    <div class="flexSeven">
+      <div class="one">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <div class="two">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <div class="three">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <div class="four">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flexbox 8 -->
+  <div class="container">
+    <div class="flexEight">
+      <div class="one">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <div class="two">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <div class="three">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flexbox 9 -->
+  <div class="container">
+    <div class="flexNine">
+      <div class="item"></div>
+      <div class="item" id="special"></div>
+      <div class="item"></div>
+    </div>
+  </div>
 
 </body>
 </html>
